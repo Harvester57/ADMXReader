@@ -40,6 +40,7 @@ Param(
     [Parameter(Mandatory=$true)] [ValidateSet("en-US", "fr-FR")] [string]$Language="en-US"
 )
 #requires -version 3
+Set-StrictMode -Version Latest
 
 Clear-Host
 #region---------------------------------------------------------[Initialisations]--------------------------------------------------------
