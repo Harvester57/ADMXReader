@@ -7,7 +7,7 @@
     The Folder containing the ADMX files that will be processed by this script. Please include a language subfolder for the corresponding ADML files.
 .PARAMETER OutputCSVFile
     The name (and extension) of the output CSV file created by the script.
-.PARAMETER language
+.PARAMETER Language
     The language (and subfolder name) of the corresponding ADML files to be used by the script. Only en-US has been used during script testing and is included in the selectable languages.
 .OUTPUTS
   Policy information CSV file stored in the root of the provided policy directory.
@@ -37,7 +37,7 @@
 Param(
     [Parameter(Mandatory=$true)] [ValidateNotNullOrEmpty()][string]$ADMXFolder="C:\temp\ADMXReader\ADMXFiles",
     [Parameter(Mandatory=$true)] [ValidateNotNullOrEmpty()][string]$OutputCSVFile="C:\temp\ADMXReader\Script_Output_Test.csv",
-    [Parameter(Mandatory=$true)] [ValidateSet("en-US")] [string]$language="en-US"
+    [Parameter(Mandatory=$true)] [ValidateSet("en-US")] [string]$Language="en-US"
 )
 #requires -version 3
 
