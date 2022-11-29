@@ -37,7 +37,7 @@
 Param(
     [Parameter(Mandatory=$true)] [ValidateNotNullOrEmpty()][string]$ADMXFolder="C:\temp\ADMXReader\ADMXFiles",
     [Parameter(Mandatory=$true)] [ValidateNotNullOrEmpty()][string]$OutputCSVFile="C:\temp\ADMXReader\Script_Output_Test.csv",
-    [Parameter(Mandatory=$true)] [ValidateSet("en-US")] [string]$Language="en-US"
+    [Parameter(Mandatory=$true)] [ValidateSet("en-US", "fr-FR")] [string]$Language="en-US"
 )
 #requires -version 3
 
